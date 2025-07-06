@@ -413,3 +413,51 @@ label {
     font-size: 14px;
   }
 }
+/* Make modal fully responsive on mobile devices */
+@media screen and (max-width: 768px) {
+  .custom-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+    max-width: none;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3); /* dim background */
+    box-shadow: none;
+  }
+
+  .modal-content {
+    width: 95%;
+    max-width: 95%;
+    max-height: 90vh;
+    padding: 20px 16px;
+    overflow-y: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .form-wrapper {
+    padding: 0;
+  }
+
+  .animated-input {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  .modal-title {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+  }
+
+  textarea.animated-input {
+    min-height: 70px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px 16px;
+    width: 100%;
+  }
+}
