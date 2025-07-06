@@ -200,7 +200,7 @@ function App() {
     </a>
   </p>
   <p className="interview-message">
-    I have completed the assignment for the <strong>Oritso</strong> company’s and I am waiting for your response.
+    I have completed the assignment for the <strong>Oritso</strong> company and I am waiting for your response.
   </p>
 </footer>
 
