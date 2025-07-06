@@ -71,7 +71,9 @@ function App() {
         </button>
       </div>
       <hr />
-      <table className="table">
+      <div className="table-wrapper">
+  <table className="table">
+      
         <thead>
           <tr>
             <th>Task Name</th>
@@ -105,20 +107,23 @@ function App() {
                   </button>
                 </td>
                 <td>
-                  <button className="btn ml2" onClick={() => editUser(index)}>
-                    <Edit size={16} />
-                    <span>Edit</span>
-                  </button>
-                  <button className="btn ml2" onClick={() => deleteUser(index)}>
-                    <Trash2 size={16} />
-                    <span>Delete</span>
-                  </button>
-                </td>
+  <div className="action-buttons">
+    <button className="btn" onClick={() => editUser(index)}>
+      <Edit size={16} />
+      <span>Edit</span>
+    </button>
+    <button className="btn btn-outline" onClick={() => deleteUser(index)}>
+      <Trash2 size={16} />
+      <span>Delete</span>
+    </button>
+  </div>
+</td>
+
               </tr>
             ))}
         </tbody>
       </table>
-
+</div>
       {/* Modal Form */}
       <Modal open={open} onClose={onCloseModal} center classNames={{ modal: 'custom-modal' }}>
         <div className="modal-content">
