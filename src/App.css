@@ -671,3 +671,66 @@ label {
 .table tr:hover {
   background-color: #f9fafb; /* light hover effect */
 }
+.stylish-header {
+  background: linear-gradient(to right, #6366f1, #3b82f6);
+  padding: 20px 5px;
+  border-radius: 12px;
+  text-align: center;
+  margin: 20px auto; /* centers the block */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  animation: fadeInSlideDown 0.8s ease-out;
+  max-width: 400px;     /* limit width */ width: 90%;           /* responsive on small screens */
+}
+
+.animated-heading {
+  color: white;
+  font-size: 1.8rem;      /* default desktop size */
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 0;
+  animation: popIn 0.6s ease-in-out;
+  line-height: 1.3;
+  word-break: break-word;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .animated-heading {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .animated-heading {
+    font-size: 1rem;
+  }
+}
+
+
+@keyframes fadeInSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Optional: Make font smaller on very small devices */
+@media (max-width: 480px) {
+  .animated-heading {
+    font-size: 1.5rem;
+  }
+}

@@ -118,7 +118,11 @@ function App() {
   return (
     <div className="container">
       <div className="d-flex">
-        <h1>Task Management App</h1>
+       <div className="d-flex stylish-header">
+  <h1 className="animated-heading">🚀 Task Management App</h1>
+</div>
+
+        
       </div>
       <div className="toolbar">
         <button className="btn btn-p" onClick={onOpenModal}>
