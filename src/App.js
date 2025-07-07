@@ -15,10 +15,10 @@ function App() {
 
   const initialTasks = [
     {
-      Task_Name: 'Fix login bug',
-      Assigned_To: 'Ravi',
-      Description: 'Resolve issue with user login ',
-      status: 'Pending'
+      Task_Name: 'CRUD App',
+      Assigned_To: 'Vansh Chauhan',
+      Description: 'built a crud app ',
+      status: 'Completed'
     },
     {
       Task_Name: 'UI Enhancements',
@@ -30,7 +30,7 @@ function App() {
       Task_Name: 'Deploy to production',
       Assigned_To: 'Arjun',
       Description: 'Push release version to server',
-      status: 'Completed'
+      status: 'Pending'
     },
   ];
 
